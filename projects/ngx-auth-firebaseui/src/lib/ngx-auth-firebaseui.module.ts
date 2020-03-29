@@ -1,12 +1,16 @@
 // @angular/*
 import {CommonModule} from '@angular/common';
-import {InjectionToken, ModuleWithProviders, NgModule} from '@angular/core';
+import {ModuleWithProviders, NgModule} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {RouterModule} from '@angular/router';
 import {FlexLayoutModule} from '@angular/flex-layout';
 // @angular/fire
-import {FirebaseAppConfig, FirebaseNameOrConfigToken, FirebaseOptionsToken} from '@angular/fire';
+import {
+  FIREBASE_APP_NAME as FirebaseNameOrConfigToken,
+  FIREBASE_OPTIONS as FirebaseOptionsToken,
+  FirebaseAppConfig
+} from '@angular/fire';
 import {AngularFireAuthModule} from '@angular/fire/auth';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
 // @angular/material
@@ -53,12 +57,18 @@ import {NgxAuthFirebaseUIConfigToken, UserProvidedConfigToken} from './tokens';
 // Export module's public API
 // components
 export {LegalityDialogComponent} from './components/legality-dialog/legality-dialog.component';
-export {LinkMenuItem, NgxAuthFirebaseuiAvatarComponent} from './components/ngx-auth-firebaseui-avatar/ngx-auth-firebaseui-avatar.component';
+export {
+  LinkMenuItem, NgxAuthFirebaseuiAvatarComponent
+} from './components/ngx-auth-firebaseui-avatar/ngx-auth-firebaseui-avatar.component';
 export {UserComponent} from './components/ngx-auth-firebaseui-user/user.component';
 export {AuthComponent} from './components/ngx-auth-firebaseui/auth.component';
 export {AuthProvidersComponent, Layout, Theme} from './components/providers/auth.providers.component';
-export {NgxAuthFirebaseuiLoginComponent} from './components/ngx-auth-firebaseui-login/ngx-auth-firebaseui-login.component';
-export {NgxAuthFirebaseuiRegisterComponent} from './components/ngx-auth-firebaseui-register/ngx-auth-firebaseui-register.component';
+export {
+  NgxAuthFirebaseuiLoginComponent
+} from './components/ngx-auth-firebaseui-login/ngx-auth-firebaseui-login.component';
+export {
+  NgxAuthFirebaseuiRegisterComponent
+} from './components/ngx-auth-firebaseui-register/ngx-auth-firebaseui-register.component';
 
 
 // guards
