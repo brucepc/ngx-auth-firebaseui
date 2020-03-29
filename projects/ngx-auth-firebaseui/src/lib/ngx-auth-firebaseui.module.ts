@@ -6,7 +6,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {RouterModule} from '@angular/router';
 import {FlexLayoutModule} from '@angular/flex-layout';
 // @angular/fire
-import {FirebaseAppConfig, FirebaseNameOrConfigToken, FirebaseOptionsToken} from '@angular/fire';
+import {FirebaseAppConfig, FIREBASE_APP_NAME as FirebaseNameOrConfigToken, FIREBASE_OPTIONS as  FirebaseOptionsToken} from '@angular/fire';
 import {AngularFireAuthModule} from '@angular/fire/auth';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
 // @angular/material
